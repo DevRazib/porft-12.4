@@ -1,0 +1,584 @@
+/*
+template: website template with html5
+Author: Razib Ahmed
+support:ahmedrazib477@gmail.com
+Version: 1.0
+
+*/
+
+/*=============TEMPLATE OF CONTENT=================
+1.COMMON
+2.NAVBAR
+3.SLIDER 
+4.ABOUT
+5.SERVICES
+6.TEAM
+7.PROMO
+8.PRICING
+9.TESTIMONIALS
+10.CONTACT
+11.FOOTER
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+    font-weight: 400;
+}
+/*1.===========COMMON CSS START===============*/
+.wrapper{
+        overflow:hidden;
+        }
+section {
+    padding: 80px 0 !important;
+}
+/*1.===========COMMON CSS END===============*/
+
+/*2.===========Navigation Bar START===============*/
+
+header {
+    position: relative;
+}
+
+.navbar-nav li {
+    padding: 0 5px;
+}
+
+.navbar-brand {
+    padding: 0 25px;
+}
+
+#nav-bar ul li a:hover {
+    color: #007bff !important;
+}
+
+.navbar {
+    background: lightblue;
+    padding: 0;
+}
+.items-left{
+                margin-left:auto;
+                }
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 500;
+    font-size: 18px;
+}
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+/*2.===========Navigation Bar END===============*/
+
+/*3.============Slider Start==========*/
+
+.banner-item {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-item::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.banner-data {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.banner-data h3 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+
+.b-btn {
+    padding: 15px;
+}
+
+
+/*this is for next and previous*/
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: rgb(190, 172, 172);
+    font-size: 70px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+
+
+/*3.============Slider END==========*/
+
+
+/*4.============About Start==========*/
+
+#About {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+#About .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    padding-top: 20px;
+}
+
+.skills-bar p {
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.progress-bar {
+    border-radius: 16px;
+}
+
+.progress {
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+/*4.============About END==========*/
+
+/*5.============SERVICES CSS START==========*/
+#Services {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#Services h1 {
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+
+#Services h1:after {
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.Services {
+    margin-top: 40px;
+}
+
+.icon {
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+#Services p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+.Services .col-md-3:hover {
+    background: #007bff;
+    cursor: pointer;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+}
+/*5.============SERVICES CSS END==========*/
+
+
+/*6.============TEAM CSS START==========*/
+
+#team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+h1 {
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+.profile-pic {
+    margin-top: 25px;
+}
+
+.profile-pic .img-box {
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+
+.profile-pic .img-box img:hover {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    cursor: pointer;
+}
+
+.profile-pic h2 {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 22px;
+    color: #007bff !important;
+}
+
+.profile-pic h3 {
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 15px;
+    color: red;
+}
+
+#team .fab {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.img-box ul {
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+}
+
+.img-box ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+.img-box:hover ul {
+    opacity: 1;
+}
+
+.img-box ul,
+.img-box ul li {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+/*6.============TEAM CSS END==========*/
+
+/*7.============PROMO CSS START==========*/
+
+#promo {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#promo p {
+    color: #fff;
+    font-size: 30px;
+}
+
+/*7.============PROMO CSS END==========*/
+
+/*8.============PRICE PLAN CSS START==========*/
+
+#price {
+    padding: 40px 0;
+    background: #efefef;
+}
+
+.single-price {
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.single-price:hover {
+    box-shadow: 0 2px 20px #333;
+}
+
+.price-head {
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.price-head h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.price-head p {
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#price span {
+    font-size: 15px;
+}
+
+.price-content {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.price-content ul li {
+    border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+.fa-check-circle {
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.fa-times-circle {
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.price-button {
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.buy-btn {
+    background-color: #2196f3;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 50px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.buy-btn:hover {
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+
+a {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+/*8.============PRICE PLAN CSS END==========*/
+
+/*9.=============Testimonials CSS START=========*/
+
+#testimonials {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#testimonials.row {
+    margin-top: 30px;
+}
+
+.col-md-4 {
+    margin: 40px auto;
+}
+
+.profile {
+    padding: 70px 10px 10px;
+    background-color: #efefef
+}
+
+.profile img {
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+}
+
+.user {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.profile h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+#testimonials span.icon-entities{
+        font-size:25px;
+        color:#333;
+        font-weight:bold;
+    }
+
+#testimonials span {
+    font-size: 12px;
+    color: #333;
+}
+
+blockquote {
+    font-size: 16px;
+    line-height: 30px;
+}
+.profile:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+/*9.============Testimonial CSS END==========*/
+
+/*10.==============GET IN TOUCH CSS START===============*/
+
+#contact {
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.form-control {
+    border-radius: 0!important;
+    border: none!important;
+}
+
+ ::-webkit-input-placeholder {
+    color: #999 !important;
+}
+
+ ::-moz-placeholder {
+    color: #999 !important;
+}
+
+ :-ms-input-placeholder {
+    color: #999 !important;
+}
+
+ ::placeholder {
+    color: #999 !important;
+}
+
+.follow {
+    background: lightblue;
+    padding: 10px;
+    margin: 15px;
+}
+
+.contact-info.fa {
+    margin: 10px;
+    color: red;
+    font-weight: bold;
+}
+#contact .form-control:focus{
+  box-shadow:none;
+  }
+/*10.============GET IN TOUCH CSS END==========*/
+/*11.===========FOOTER CSS START==========*/
+
+#footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.fa-heart {
+    margin: 3px;
+    color: red;
+}
+/*11.============FOOTER CSS END==========*/
+@media only screen and (min-width:300px) and (max-width:768px) {
+    .navbar-brand {
+        padding: 0;
+        margin-right: 0;
+    }
+    .banner-data h3 {
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 25px;
+    }
+    .b-btn {
+        padding: 0;
+    }
+    #footer p{
+        font-size:20px;
+    }
+}
